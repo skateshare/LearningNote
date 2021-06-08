@@ -155,6 +155,12 @@ class Stack2():
     def peek(self):
         return self.top
 
+    def empty(self):
+        if self.length <= 0:
+            return True
+        else:
+            return False
+
 
 
 # in this case , I'll try to use array to implement stack
@@ -178,4 +184,10 @@ class Stack3():
             return None
         else:
             return self.arr[-1]
+
+    def empty(self):
+        if len(self.arr) <= 0:
+            return True
+        else:
+            return False
 

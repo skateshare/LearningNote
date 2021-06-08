@@ -1,5 +1,6 @@
 from Stack import Stack3
 from Queue import Queue
+from Queue import Queue2
 
 
 
@@ -13,12 +14,14 @@ print(october.peek())
 october.push("ptt")
 print(october.peek())"""
 
-line = Queue()
+
+
+line = Queue2()
 
 line.enqueue("October")
-line.enqueue("Leo")
 line.enqueue("Clay")
-print(line.peek().val)
-line.dequeue()
-print(line.peek().val)
-
+line.enqueue("Leo")
+print(line.dequeue())
+print(line.peek())
+print(line.dequeue())
+print(line.peek())
