@@ -1,4 +1,4 @@
-from Stack import Node
+from LinkList import Node
 from Stack import Stack3
 
 class Queue():
@@ -41,7 +41,7 @@ class Queue():
         else:
             return self.first
 
-# this is to implement Queue using stack
+# implement Queue use two stacks(array)
 class Queue2():
     def __init__(self):
         self.inQ = Stack3()
