@@ -115,7 +115,9 @@ class Sort():
                     temp.append(right[rptr])
                     rptr += 1
 
-    def quickSort(self, arr):
+    # 這個 implementation 方法不是一班的 quick sort , 因為 space complexity 不是O(logN)
+    # 但是這個 implementation 可以維持 stable 的特性！
+    """def quickSort(self, arr):
         if len(arr) == 0:
             return []
         if len(arr) == 1:
@@ -130,7 +132,32 @@ class Sort():
             else:
                 right.append(arr[i])
 
-        return self.quickSort(left) + [pivot] + self.quickSort(right)
+        return self.quickSort(left) + [pivot] + self.quickSort(right)"""
+
+    def quickSort(self, arr):
+        if len(arr) == 0:
+            return []
+        if len(arr) == 1:
+            return arr
+
+        pos = len(arr) - 1
+        pivot = arr[pos]
+        index = 0
+        for i in range(len(arr)-1):
+            if arr[i] <= pivot:
+                temp = arr[i]
+                arr[i] = arr[index]
+                arr[index] = temp
+                index += 1
+        temp = arr[index]
+        arr[index] = pivot
+        arr[pos] = temp
+
+        return self.quickSort(arr[:index]) + [arr[index]] + self.quickSort(arr[index+1:])
+
+
+
+
 
 
 
@@ -146,6 +173,6 @@ print(mySort.mergeSort(mySort.get()))"""
 arr = [99, 44, 6, 2, 15, 5, 63, 87, 283, 4, 0]
 mySort = Sort(arr)
 print(mySort.quickSort(mySort.get()))
-print(mySort.mergeSort(arr))
+
 
 
