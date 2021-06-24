@@ -1,3 +1,15 @@
+"""
+Graph:
+BFS : pros : shortest path(unweited) , closer Nodes,  cons : more memory
+
+DFS : pros : less memory , does path exist , cons: can get slow
+
+note the way to construct a graph:
+- adjacent matrix
+- adjacent list
+- edge list
+"""
+
 class Graph():
     def __init__(self):
         self.noOfNodes = 0
