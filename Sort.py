@@ -108,7 +108,7 @@ class Sort():
             elif lptr != len(left) and rptr == len(right):
                 return temp + left[lptr:]
             else:
-                if left[lptr] < right[rptr]:
+                if left[lptr] <= right[rptr]:
                     temp.append(left[lptr])
                     lptr += 1
                 else:
@@ -146,5 +146,6 @@ print(mySort.mergeSort(mySort.get()))"""
 arr = [99, 44, 6, 2, 15, 5, 63, 87, 283, 4, 0]
 mySort = Sort(arr)
 print(mySort.quickSort(mySort.get()))
+print(mySort.mergeSort(arr))
 
 
