@@ -3,3 +3,6 @@ Invoke-WebRequest -Headers @{ 'Authorization' = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGci
 Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.293.1.zip", "$PWD")
 
 ./config.cmd --url https://github.azc.ext.hp.com/BPSVCommonService/QA-Stage-Daily-Smoking-Test --token AAAHYN7BQ7U2MY5UV6JUTDTEEJL4Q
+
+
+./config.sh remove --token AAAHYN4MN56HRNYL4OW4DD3EEJOUY
