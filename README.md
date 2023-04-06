@@ -9,4 +9,4 @@ tar xzf ./actions-runner-linux-x64-2.293.1.tar.gz
 
 ============================
 
-./config.sh remove --token AAAHYNZ4LQI3ZKB6XKOQECLEF2PHQ
+./config.sh remove --token AAAHYNZ26DZHMLDPBGTLHRDEF2Q72
