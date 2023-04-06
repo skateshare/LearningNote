@@ -3,7 +3,7 @@ curl -o -k actions-runner-linux-x64-2.293.1.tar.gz -L -H 'Authorization: Bearer 
 
 tar xzf ./actions-runner-linux-x64-2.293.1.tar.gz
 
-./config.sh --url https://github.azc.ext.hp.com/BPSVCommonService/QA-Stage-Daily-Smoking-Test --token AAAHYN4GJIIYR2BOHRA7XTDEEJX2Y
+./config.sh --url https://github.azc.ext.hp.com/BPSVCommonService/QA-Stage-Daily-Smoking-Test --token AAAHYN2NFBP4ALBC6MWYFHTEF2AZ4
 
 
 ./run.sh
