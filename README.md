@@ -5,3 +5,8 @@ echo "6a4d93f9ce4fee66041e49ac7ee2a3fcc6d3fe067e05736e48dfeaa486279218 actions-r
 tar xzf ./actions-runner-linux-x64-2.293.1.tar.gz
 
 ./config.sh --url https://github.azc.ext.hp.com/BPSVCommonService --token AAADW275B6QB6OEJBOWRX63EF2JMU
+
+
+============================
+
+./config.sh remove --token AAAHYN2G72C2NOHYLMMCONLEF2O3K
