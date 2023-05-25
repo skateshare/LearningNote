@@ -25,3 +25,6 @@ print(res)
 res = sorted(test, key=lambda x: (x<0, abs(x)))
 print(res)
 #[1, 5, 9, 10, 12, -2, -5, -8, -11]
+
+
+
